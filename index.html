@@ -6,6 +6,8 @@
     <title>Capsule Magazine</title>
     <link rel="stylesheet" href="https://use.typekit.net/olm2agf.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
 </head>
 
 <style>
@@ -20,18 +22,84 @@
         font-weight: 350;
         font-style: normal;
     }
+
+    .glide {
+        position: relative;
+    }
+
+    .glide__arrow {
+        top: 50%;
+        /* Center vertically */
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent background */
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .glide__arrow--left {
+        left: 10px;
+        /* Adjust as needed for spacing from the left edge */
+    }
+
+    .glide__arrow--right {
+        right: 10px;
+        /* Adjust as needed for spacing from the right edge */
+    }
 </style>
 
 <body class="bg-[#b12828]">
-    <div id="header-section" class="container mx-auto my-8 p-8">
-        <div>
-            <h1 class="text-6xl font-bold mb-4 text-center">Capsule Magazine</h1>
+    <div id="header-section" class="relative w-full mx-auto mb-8 ">
+        <div class="absolute top-0 left-0 right-0 z-20 flex justify-center p-8">
+            <h1 class="text-6xl font-bold mb-4 text-center text-white">Capsule Magazine</h1>
+        </div>
+
+        <!-- Glide Carousel -->
+        <div class="glide w-full">
+            <div class="glide__track w-full" data-glide-el="track">
+                <ul class="glide__slides">
+                    <!-- Your images here -->
+                    <!-- <li class="glide__slide">
+                        <img src="img/carousel/vogue place holder.jpg" alt="Image 2">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="img/carousel/vogue place holder 2.jpg" alt="Image 2">
+                    </li> -->
+                    <li class="glide__slide">
+                        <img src="img/carousel/16_9 place holder 3.jpeg" alt="Image 2">
+                    </li>
+                    <!-- ... add more slides as needed -->
+                </ul>
+            </div>
+
+            <div class="glide__arrows" data-glide-el="controls">
+                <!-- Left Arrow -->
+                <button class="glide__arrow glide__arrow--left absolute left-0 z-10" data-glide-dir="<">
+                    <!-- Left arrow SVG icon -->
+                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+
+                <!-- Right Arrow -->
+                <button class="glide__arrow glide__arrow--right absolute right-0 z-10" data-glide-dir=">">
+                    <!-- Right arrow SVG icon -->
+                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+
         </div>
     </div>
     <div id="editors-letter"
-        class="text-[#fefece] my-8 ml-8 mr-8 mx-auto gap-8 grid grid-flow-row-dense grid-cols-1 grid-rows-1 sm:grid-cols-2 sm:ml-16 sm:mr-16 sm:gap-16 md:ml-32 md:mr-32 lg:ml-64 lg:mr-64">
+        class="text-[#fefece] my-32 ml-8 mr-8 mx-auto gap-8 grid grid-flow-row-dense grid-cols-1 grid-rows-1 sm:grid-cols-2 sm:ml-16 sm:mr-16 sm:gap-16 md:ml-32 md:mr-32 lg:ml-64 lg:mr-64">
         <div class="text-justify">
-            <div class="text-3xl mb-8">Editor's Letter</div>
+            <div class="text-4xl mb-8">Editor's Letter</div>
             <p>
                 I'm at peace with the small role I've played in this last contradiction because I know he would have
                 loved
@@ -46,6 +114,7 @@
             </p>
         </div>
         <div class="text-justify">
+            <div class="text-4xl mb-8"></div>
             <p>
                 A life lived as Karl's was - gloriously, restlessly, always in public, and full of fascinating twists,
                 turns, and transformations-warrants a celebration, and that is what we've organized here. Vogue is
@@ -59,14 +128,42 @@
             </p>
         </div>
     </div>
-    <div id="article-row">
-
+    <div id="article-row" class="my-32 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4">
+        <div>
+            <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
+            <img src="img/posts/anime place holder.jpg" alt="Image 2">
+            <div class="m-4">
+                Story Title for Capsule Magazine
+            </div>
+        </div>
+        <div>
+            <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
+            <img src="img/posts/succession place holder.jpg" alt="Image 2">
+            <div class="m-4">
+                Story Title for Capsule Magazine
+            </div>
+        </div>
+        <div>
+            <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
+            <img src="img/posts/aera place holder.jpg" alt="Image 2">
+            <div class="m-4">
+                Story Title for Capsule Magazine
+            </div>
+        </div>
     </div>
     <div id="footer container mx-auto my-8 p-8">
         <div class="text-center text-lg font-bold mb-4">
             <a href=""><span class="text-[#fefece] underline">Connect</span></a> with us
         </div>
     </div>
+
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 1
+        }).mount();
+    </script>
 
 </body>
 
