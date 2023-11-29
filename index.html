@@ -31,11 +31,11 @@
         top: 50%;
         /* Center vertically */
         transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.25);
         /* Semi-transparent background */
         color: white;
         border: none;
-        padding: 10px;
+        padding: 5px;
         cursor: pointer;
     }
 
@@ -53,13 +53,13 @@
 <body class="bg-[#b12828]">
     <div id="header-section" class="relative w-full mx-auto mb-8 ">
         <div class="absolute top-0 left-0 right-0 z-20 flex justify-center p-8">
-            <h1 class="text-6xl font-bold mb-4 text-center text-white">Capsule Magazine</h1>
+            <h1 class="text-7xl font-bold mb-4 text-center text-white">Capsule Magazine</h1>
         </div>
 
         <!-- Glide Carousel -->
         <div class="glide w-full">
-            <div class="glide__track w-full" data-glide-el="track">
-                <ul class="glide__slides">
+            <div class="glide__track w-full h-full" data-glide-el="track">
+                <ul class="glide__slides h-full">
                     <!-- Your images here -->
                     <!-- <li class="glide__slide">
                         <img src="img/carousel/vogue place holder.jpg" alt="Image 2">
@@ -67,8 +67,18 @@
                     <li class="glide__slide">
                         <img src="img/carousel/vogue place holder 2.jpg" alt="Image 2">
                     </li> -->
-                    <li class="glide__slide">
-                        <img src="img/carousel/16_9 place holder 3.jpeg" alt="Image 2">
+                    <li class="glide__slide relative flex items-center justify-center h-full">
+                        <img src="img/carousel/16_9 place holder 3.jpeg" alt="Image 2"
+                            class="w-full h-full object-cover">
+                        <div
+                            class="absolute top-1/2 left-0 right-0 z-60 transform -translate-y-1/2 ml-16 mr-16 text-center">
+                            <div class="text-3xl">
+                                Story Title for Capsule Magazine
+                            </div>
+                            <div class="text-lg mt-4">
+                                A subhead that gives a preview into the story and hooks the reader into the piece.
+                            </div>
+                        </div>
                     </li>
                     <!-- ... add more slides as needed -->
                 </ul>
@@ -132,27 +142,27 @@
         <div>
             <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
             <img src="img/posts/anime place holder.jpg" alt="Image 2">
-            <div class="m-4">
+            <div class="m-4 text-2xl">
                 Story Title for Capsule Magazine
             </div>
         </div>
         <div>
             <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
             <img src="img/posts/succession place holder.jpg" alt="Image 2">
-            <div class="m-4">
+            <div class="m-4 text-2xl">
                 Story Title for Capsule Magazine
             </div>
         </div>
         <div>
             <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
             <img src="img/posts/aera place holder.jpg" alt="Image 2">
-            <div class="m-4">
+            <div class="m-4 text-2xl">
                 Story Title for Capsule Magazine
             </div>
         </div>
     </div>
-    <div id="footer container mx-auto my-8 p-8">
-        <div class="text-center text-lg font-bold mb-4">
+    <div id="footer container mx-auto p-8">
+        <div class="text-center text-lg font-bold mb-16">
             <a href=""><span class="text-[#fefece] underline">Connect</span></a> with us
         </div>
     </div>
