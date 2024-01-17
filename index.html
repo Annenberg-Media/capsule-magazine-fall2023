@@ -23,6 +23,12 @@
         font-style: normal;
     }
 
+    .uniform-image {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+    }
+
     .glide {
         position: relative;
     }
@@ -50,84 +56,85 @@
     }
 </style>
 
-<body class="bg-[#b12828]">
-    <div id="header-section" class="relative w-full mx-auto mb-8 ">
-        <div class="absolute top-0 left-0 right-0 z-20 flex justify-center p-8">
-            <h1 class="text-3xl sm:text-7xl font-bold mb-4 text-center text-white">Capsule Magazine</h1>
-        </div>
+<body>
+    <div class="bg-[#b12828]">
+        <div id="header-section" class="relative w-full mx-auto mb-8 ">
+            <div class="absolute top-0 left-0 right-0 z-20 flex justify-center p-8">
+                <div class="text-3xl sm:text-7xl font-bold mb-4 text-center text-white">Capsule Magazine</div>
+            </div>
 
-        <!-- Glide Carousel -->
-        <div class="glide w-full">
-            <div class="glide__track w-full h-full" data-glide-el="track">
-                <ul class="glide__slides h-full">
-                    <!-- Your images here -->
-                    <!-- <li class="glide__slide">
+            <!-- Glide Carousel -->
+            <div class="glide w-full">
+                <div class="glide__track w-full h-screen" data-glide-el="track">
+                    <ul class="glide__slides h-screen">
+                        <!-- Your images here -->
+                        <!-- <li class="glide__slide">
                         <img src="img/carousel/vogue place holder.jpg" alt="Image 2">
                     </li>
                     <li class="glide__slide">
                         <img src="img/carousel/vogue place holder 2.jpg" alt="Image 2">
                     </li> -->
-                    <li
-                        class="glide__slide relative flex items-center justify-center h-full bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.95),rgba(0,0,0,0.5)),url('https://www.uscannenbergmedia.com/resizer/F6yDJj1iyznhAqaw50xnUoIoEo4=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/uscannenberg/PGYA7OPMVJFMBB4QNRMPS5KMOE.jpg')] bg-cover bg-center">
-                        <a
-                            href="https://www.uscannenbergmedia.com/2024/01/11/americas-banana-epidemic-asian-american-conservative-thought/">
-                            <div
-                                class="absolute top-1/2 lg:top-2/3 left-0 right-0 z-60 transform -translate-y-1/2 ml-16 mr-16 text-center lg:text-left">
-                                <div class="text-5xl text-white p-4">
-                                    America's Banana Epidemic
+                        <li
+                            class="glide__slide relative flex items-center justify-center h-full bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.95),rgba(0,0,0,0.5)),url('https://www.uscannenbergmedia.com/resizer/F6yDJj1iyznhAqaw50xnUoIoEo4=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/uscannenberg/PGYA7OPMVJFMBB4QNRMPS5KMOE.jpg')] bg-cover bg-center">
+                            <a
+                                href="https://www.uscannenbergmedia.com/2024/01/11/americas-banana-epidemic-asian-american-conservative-thought/">
+                                <div
+                                    class="absolute top-1/2 lg:top-2/3 left-0 right-0 z-60 transform -translate-y-1/2 ml-16 mr-16 text-center lg:text-left">
+                                    <div class="text-5xl text-white p-4">
+                                        America's Banana Epidemic
+                                    </div>
+                                    <div class="text-2xl mt-4 text-white p-2">
+                                        The Asian American Conservative Thought
+                                    </div>
                                 </div>
-                                <div class="text-2xl mt-4 text-white p-2">
-                                    The Asian American Conservative Thought
-                                </div>
-                            </div>
-                        </a>
+                            </a>
 
-                    </li>
-                    <li
-                        class="glide__slide relative flex items-center justify-center h-full bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.95),rgba(0,0,0,0.5)),url('https://www.uscannenbergmedia.com/resizer/s9Af5B5jIERP6boNaqka5_aNY_w=/800x0/filters:format(png):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/uscannenberg/XIMYDTP4MBATBFRN3XU4A5OOUM.png')] bg-cover bg-center">
-                        <a href="https://www.uscannenbergmedia.com/2024/01/11/notes-on-a-dying-form/">
-                            <div
-                                class="absolute top-1/2 lg:top-2/3 left-0 right-0 z-60 transform -translate-y-1/2 ml-16 mr-16 text-center lg:text-left">
-                                <div class="text-5xl text-white p-4">
-                                    Notes on a Dying Form
-                                </div>
-                                <div class="text-2xl mt-4 text-white p-2">
+                        </li>
+                        <li
+                            class="glide__slide relative flex items-center justify-center h-full bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.95),rgba(0,0,0,0.5)),url('https://www.uscannenbergmedia.com/resizer/s9Af5B5jIERP6boNaqka5_aNY_w=/800x0/filters:format(png):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/uscannenberg/XIMYDTP4MBATBFRN3XU4A5OOUM.png')] bg-cover bg-center">
+                            <a href="https://www.uscannenbergmedia.com/2024/01/11/notes-on-a-dying-form/">
+                                <div
+                                    class="absolute top-1/2 lg:top-2/3 left-0 right-0 z-60 transform -translate-y-1/2 ml-16 mr-16 text-center lg:text-left">
+                                    <div class="text-5xl text-white p-4">
+                                        Notes on a Dying Form
+                                    </div>
+                                    <div class="text-2xl mt-4 text-white p-2">
 
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
 
-                    </li>
-                    <li
-                        class="glide__slide relative flex items-center justify-center h-full bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.95),rgba(0,0,0,0.5)),url('https://www.uscannenbergmedia.com/resizer/hXbupdyuW3htLq0_oBPr6FZy0Kg=/800x0/filters:format(png):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/uscannenberg/2SCWKHIEKNBAFLRVV6RXRIPVRY.png')] bg-cover bg-center">
-                        <a href="https://www.uscannenbergmedia.com/2024/01/11/the-tragedy-in-the-games-we-play/">
-                            <div
-                                class="absolute top-1/2 lg:top-2/3 left-0 right-0 z-60 transform -translate-y-1/2 ml-16 mr-16 text-center lg:text-left">
-                                <div class="text-5xl text-white p-4">
-                                    The Tragedy in the Games We Play
-                                </div>
-                                <div class="text-2xl mt-4 text-white p-2">
+                        </li>
+                        <li
+                            class="glide__slide relative flex items-center justify-center h-full bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.95),rgba(0,0,0,0.5)),url('https://www.uscannenbergmedia.com/resizer/hXbupdyuW3htLq0_oBPr6FZy0Kg=/800x0/filters:format(png):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/uscannenberg/2SCWKHIEKNBAFLRVV6RXRIPVRY.png')] bg-cover bg-center">
+                            <a href="https://www.uscannenbergmedia.com/2024/01/11/the-tragedy-in-the-games-we-play/">
+                                <div
+                                    class="absolute top-1/2 lg:top-2/3 left-0 right-0 z-60 transform -translate-y-1/2 ml-16 mr-16 text-center lg:text-left">
+                                    <div class="text-5xl text-white p-4">
+                                        The Tragedy in the Games We Play
+                                    </div>
+                                    <div class="text-2xl mt-4 text-white p-2">
 
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li
-                        class="glide__slide relative flex items-center justify-center h-full bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.95),rgba(0,0,0,0.5)),url('https://www.uscannenbergmedia.com/resizer/lHHRHmZJlMZslVaLKUjMPJ9O3Vs=/800x0/filters:format(png):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/uscannenberg/A3BOG3E72RB3BGZ3PSWB452HXM.png')] bg-cover bg-center">
-                        <a
-                            href="https://www.uscannenbergmedia.com/2024/01/11/this-would-never-happen-in-real-life-professionals-on-fake-professionals/">
-                            <div
-                                class="absolute top-1/2 lg:top-2/3 left-0 right-0 z-60 transform -translate-y-1/2 ml-16 mr-16 text-center lg:text-left">
-                                <div class="text-5xl text-white p-4">
-                                    Against Real Life
+                            </a>
+                        </li>
+                        <li
+                            class="glide__slide relative flex items-center justify-center h-full bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.95),rgba(0,0,0,0.5)),url('https://www.uscannenbergmedia.com/resizer/lHHRHmZJlMZslVaLKUjMPJ9O3Vs=/800x0/filters:format(png):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/uscannenberg/A3BOG3E72RB3BGZ3PSWB452HXM.png')] bg-cover bg-center">
+                            <a
+                                href="https://www.uscannenbergmedia.com/2024/01/11/this-would-never-happen-in-real-life-professionals-on-fake-professionals/">
+                                <div
+                                    class="absolute top-1/2 lg:top-2/3 left-0 right-0 z-60 transform -translate-y-1/2 ml-16 mr-16 text-center lg:text-left">
+                                    <div class="text-5xl text-white p-4">
+                                        Against Real Life
+                                    </div>
+                                    <div class="text-2xl mt-4 text-white p-2">
+                                        Professionals on Fake Professionals
+                                    </div>
                                 </div>
-                                <div class="text-2xl mt-4 text-white p-2">
-                                    Professionals on Fake Professionals
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <!-- <li class="glide__slide relative flex items-center justify-center h-full">
+                            </a>
+                        </li>
+                        <!-- <li class="glide__slide relative flex items-center justify-center h-full">
                         <img src="img/carousel/16_9 place holder 3.jpeg" alt="Image 2"
                             class="w-full h-full object-cover">
                         <div
@@ -140,181 +147,189 @@
                             </div>
                         </div>
                     </li> -->
-                    <!-- ... add more slides as needed -->
-                </ul>
+                        <!-- ... add more slides as needed -->
+                    </ul>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <!-- Left Arrow -->
+                    <button class="glide__arrow glide__arrow--left absolute left-0 z-10" data-glide-dir="<">
+                        <!-- Left arrow SVG icon -->
+                        <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+
+                    <!-- Right Arrow -->
+                    <button class="glide__arrow glide__arrow--right absolute right-0 z-10" data-glide-dir=">">
+                        <!-- Right arrow SVG icon -->
+                        <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+
             </div>
-
-            <div class="glide__arrows" data-glide-el="controls">
-                <!-- Left Arrow -->
-                <button class="glide__arrow glide__arrow--left absolute left-0 z-10" data-glide-dir="<">
-                    <!-- Left arrow SVG icon -->
-                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg>
-                </button>
-
-                <!-- Right Arrow -->
-                <button class="glide__arrow glide__arrow--right absolute right-0 z-10" data-glide-dir=">">
-                    <!-- Right arrow SVG icon -->
-                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                </button>
+        </div>
+        <div id="editors-letter"
+            class="text-[#fefece] my-32 ml-8 mr-8 mx-auto gap-8 grid grid-flow-row-dense grid-cols-1 grid-rows-1 sm:grid-cols-2 sm:ml-16 sm:mr-16 sm:gap-16 md:ml-32 md:mr-32 lg:ml-64 lg:mr-64">
+            <div class="text-justify">
+                <div class="text-4xl mb-8">Editors' Letter</div>
+                <p class="mb-8">
+                    This was hard. We won’t lie. Being the only longform vertical of Annenberg Media has been a process
+                    and
+                    a half. Capsule was handed over to us by Amina Niasse and Eddie Sun, the previous editors of the
+                    magazine. Questions like “Where do we start? What do we do? How do we begin?” came constantly to us.
+                    Luckily, we had a persistent team of writers and designers determined to tell their stories to the
+                    world.
+                </p>
+                <p>
+                    We want Capsule to be a space for experimentation, where contributors could explore passion projects
+                    and
+                    bring them to life. And guess what? We have been heartened repeatedly by the dedication of our
+                    writers,
+                    the flexibility of our designers and the patience of our web editors as we created the inaugural
+                    issue
+                    of Capsule Magazine. We are setting the tone for the future.
+                </p>
             </div>
-
+            <div class="text-justify">
+                <div class="text-4xl mb-8"></div>
+                <p class="mb-8">
+                    So, what are the pieces about? You will meet writers who confront grief in their families. Others
+                    question the future of journalism. One writes about rising conservative thought in Asian-American
+                    communities. And many write about our favorite shows, video games and artists we don’t know of yet.
+                    You
+                    will meet pieces that will entertain and inform you, because though we are a magazine, we have the
+                    same
+                    goals as “regular journalism:” to inform, question, investigate and remember what we must remember.
+                </p>
+                <p class="mb-8">
+                    This year has been a difficult one for journalists all over the world: from the wars in Ukraine and
+                    Gaza, attacks on press freedoms, and the shuttering of newsrooms nationwide, bold journalism is more
+                    necessary than ever. We hope to investigate more topics in the future, to create essays that will
+                    make
+                    you think and act. Capsule’s goal is to capture: fortunately, the world is quite big, and there is
+                    always something new to explore.
+                </p>
+                <p class="mb-8">
+                    Expect more stories and essays; never any answers, but always more questions.
+                </p>
+                <p>
+                    With love and respect,
+                    <br />
+                    Shane Dimapanat and Jasmine Kwok
+                </p>
+            </div>
         </div>
-    </div>
-    <div id="editors-letter"
-        class="text-[#fefece] my-32 ml-8 mr-8 mx-auto gap-8 grid grid-flow-row-dense grid-cols-1 grid-rows-1 sm:grid-cols-2 sm:ml-16 sm:mr-16 sm:gap-16 md:ml-32 md:mr-32 lg:ml-64 lg:mr-64">
-        <div class="text-justify">
-            <div class="text-4xl mb-8">Editors' Letter</div>
-            <p class="mb-8">
-                This was hard. We won’t lie. Being the only longform vertical of Annenberg Media has been a process and
-                a half. Capsule was handed over to us by Amina Niasse and Eddie Sun, the previous editors of the
-                magazine. Questions like “Where do we start? What do we do? How do we begin?” came constantly to us.
-                Luckily, we had a persistent team of writers and designers determined to tell their stories to the
-                world.
-            </p>
-            <p>
-                We want Capsule to be a space for experimentation, where contributors could explore passion projects and
-                bring them to life. And guess what? We have been heartened repeatedly by the dedication of our writers,
-                the flexibility of our designers and the patience of our web editors as we created the inaugural issue
-                of Capsule Magazine. We are setting the tone for the future.
-            </p>
-        </div>
-        <div class="text-justify">
-            <div class="text-4xl mb-8"></div>
-            <p class="mb-8">
-                So, what are the pieces about? You will meet writers who confront grief in their families. Others
-                question the future of journalism. One writes about rising conservative thought in Asian-American
-                communities. And many write about our favorite shows, video games and artists we don’t know of yet. You
-                will meet pieces that will entertain and inform you, because though we are a magazine, we have the same
-                goals as “regular journalism:” to inform, question, investigate and remember what we must remember.
-            </p>
-            <p class="mb-8">
-                This year has been a difficult one for journalists all over the world: from the wars in Ukraine and
-                Gaza, attacks on press freedoms, and the shuttering of newsrooms nationwide, bold journalism is more
-                necessary than ever. We hope to investigate more topics in the future, to create essays that will make
-                you think and act. Capsule’s goal is to capture: fortunately, the world is quite big, and there is
-                always something new to explore.
-            </p>
-            <p class="mb-8">
-                Expect more stories and essays; never any answers, but always more questions.
-            </p>
-            <p>
-                With love and respect,
-                <br />
-                Shane Dimapanat and Jasmine Kwok
-            </p>
-        </div>
-    </div>
-    <!-- <div class="ml-8 mr-8 mx-auto sm:ml-16 sm:mr-16 sm:gap-16 md:ml-32 md:mr-32 lg:ml-64 lg:mr-64">
+        <!-- <div class="ml-8 mr-8 mx-auto sm:ml-16 sm:mr-16 sm:gap-16 md:ml-32 md:mr-32 lg:ml-64 lg:mr-64">
         <iframe id="flipbook" allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe"
             src="https://heyzine.com/flip-book/e2585d4c9b.html" style="width: 100%; height: 600px;"></iframe>
     </div> -->
-    <div id="article-row" class="my-32 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4">
-        <div>
-            <a
-                href="https://www.uscannenbergmedia.com/2024/01/11/americas-banana-epidemic-asian-american-conservative-thought/">
-                <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
-                <img src="https://www.uscannenbergmedia.com/resizer/F6yDJj1iyznhAqaw50xnUoIoEo4=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/uscannenberg/PGYA7OPMVJFMBB4QNRMPS5KMOE.jpg"
-                    alt="Image 2">
-                <div class="m-4 text-2xl">
-                    America’s Banana Epidemic: Asian American Conservative Thought
-                </div>
-            </a>
+        <div id="article-row" class="my-32 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4">
+            <div>
+                <a
+                    href="https://www.uscannenbergmedia.com/2024/01/11/americas-banana-epidemic-asian-american-conservative-thought/">
+                    <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
+                    <img src="https://www.uscannenbergmedia.com/resizer/F6yDJj1iyznhAqaw50xnUoIoEo4=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/uscannenberg/PGYA7OPMVJFMBB4QNRMPS5KMOE.jpg"
+                        alt="Image 2" class="uniform-image">
+                    <div class="m-4 text-2xl">
+                        America’s Banana Epidemic: Asian American Conservative Thought
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.uscannenbergmedia.com/2024/01/11/the-tragedy-in-the-games-we-play/">
+                    <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
+                    <img src="img/posts/TheTragedy-header.png" alt="Image 2" class="uniform-image">
+                    <div class="m-4 text-2xl">
+                        The Tragedy In The Games We Play
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a
+                    href="https://www.uscannenbergmedia.com/2024/01/11/this-would-never-happen-in-real-life-professionals-on-fake-professionals/">
+                    <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
+                    <img src="img/posts/against-real-life-header.png" alt="Image 2" class="uniform-image">
+                    <div class="m-4 text-2xl">
+                        Against Real Life: Professionals on Fake Professionals
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.uscannenbergmedia.com/2024/01/11/out-of-thin-air/">
+                    <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
+                    <img src="img/posts/out-of-thin-air.jpg" alt="Image 2" class="uniform-image">
+                    <div class="m-4 text-2xl">
+                        Cafes Near Campus
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.uscannenbergmedia.com/2024/01/11/about-breathless-love/">
+                    <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
+                    <img src="img/posts/breathless-love.png" alt="Image 2" class="uniform-image">
+                    <div class="m-4 text-2xl">
+                        Breathless Love: About Grief and Fatherhood
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.uscannenbergmedia.com/2024/01/11/brother-to-the-night/">
+                    <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
+                    <img src="img/posts/brother-to-the-night.jpg" alt="Image 2" class="uniform-image">
+                    <div class="m-4 text-2xl">
+                        Brother to the Night
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.uscannenbergmedia.com/2024/01/11/soul-restoration/">
+                    <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
+                    <img src="img/posts/SoulRestorationCollage_1920x1080.png" alt="Image 2" class="uniform-image">
+                    <div class="m-4 text-2xl">
+                        Soul Restoration
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.uscannenbergmedia.com/2024/01/11/the-queer-hooligans-of-las-rugby-scene/">
+                    <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
+                    <img src="img/posts/Queer-men-in-rugby-Header.png" alt="Image 2" class="uniform-image">
+                    <div class="m-4 text-2xl">
+                        The Queer Hooligans of L.A’s Rugby Scene
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.uscannenbergmedia.com/2024/01/11/out-of-thin-air/">
+                    <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
+                    <img src="img/posts/out-of-thin-air.jpg" alt="Image 2" class="uniform-image">
+                    <div class="m-4 text-2xl">
+                        Out of Thin Air
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.uscannenbergmedia.com/2024/01/11/notes-on-a-dying-form/">
+                    <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
+                    <img src="img/posts/notes-on-a-dying-form.png" alt="Image 2" class="uniform-image">
+                    <div class="m-4 text-2xl">
+                        Notes On A Dying Form
+                    </div>
+                </a>
+            </div>
         </div>
-        <div>
-            <a href="https://www.uscannenbergmedia.com/2024/01/11/the-tragedy-in-the-games-we-play/">
-                <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
-                <img src="img/posts/TheTragedy-header.png" alt="Image 2">
-                <div class="m-4 text-2xl">
-                    The Tragedy In The Games We Play
-                </div>
-            </a>
-        </div>
-        <div>
-            <a
-                href="https://www.uscannenbergmedia.com/2024/01/11/this-would-never-happen-in-real-life-professionals-on-fake-professionals/">
-                <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
-                <img src="img/posts/against-real-life-header.png" alt="Image 2">
-                <div class="m-4 text-2xl">
-                    Against Real Life: Professionals on Fake Professionals
-                </div>
-            </a>
-        </div>
-        <div>
-            <a href="https://www.uscannenbergmedia.com/2024/01/11/out-of-thin-air/">
-                <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
-                <img src="img/posts/out-of-thin-air.jpg" alt="Image 2">
-                <div class="m-4 text-2xl">
-                    Cafes Near Campus
-                </div>
-            </a>
-        </div>
-        <div>
-            <a href="https://www.uscannenbergmedia.com/2024/01/11/about-breathless-love/">
-                <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
-                <img src="img/posts/breathless-love.png" alt="Image 2">
-                <div class="m-4 text-2xl">
-                    Breathless Love: About Grief and Fatherhood
-                </div>
-            </a>
-        </div>
-        <div>
-            <a href="https://www.uscannenbergmedia.com/2024/01/11/brother-to-the-night/">
-                <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
-                <img src="img/posts/brother-to-the-night.jpg" alt="Image 2">
-                <div class="m-4 text-2xl">
-                    Brother to the Night
-                </div>
-            </a>
-        </div>
-        <div>
-            <a href="https://www.uscannenbergmedia.com/2024/01/11/soul-restoration/">
-                <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
-                <img src="img/posts/SoulRestorationCollage_1920x1080.png" alt="Image 2">
-                <div class="m-4 text-2xl">
-                    Soul Restoration
-                </div>
-            </a>
-        </div>
-        <div>
-            <a href="https://www.uscannenbergmedia.com/2024/01/11/the-queer-hooligans-of-las-rugby-scene/">
-                <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
-                <img src="img/posts/Queer-men-in-rugby-Header.png" alt="Image 2">
-                <div class="m-4 text-2xl">
-                    The Queer Hooligans of L.A’s Rugby Scene
-                </div>
-            </a>
-        </div>
-        <div>
-            <a href="https://www.uscannenbergmedia.com/2024/01/11/out-of-thin-air/">
-                <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
-                <img src="img/posts/out-of-thin-air.jpg" alt="Image 2">
-                <div class="m-4 text-2xl">
-                    Out of Thin Air
-                </div>
-            </a>
-        </div>
-        <div>
-            <a href="https://www.uscannenbergmedia.com/2024/01/11/notes-on-a-dying-form/">
-                <hr class="h-px mb-8 mr-8 ml-8 bg-gray-200 border-0">
-                <img src="img/posts/notes-on-a-dying-form.png" alt="Image 2">
-                <div class="m-4 text-2xl">
-                    Notes On A Dying Form
-                </div>
-            </a>
-        </div>
-    </div>
-    <div id="footer container mx-auto p-8">
-        <div class="text-center text-lg font-bold mb-8">
-            <a href=""><span class="text-[#fefece] underline">Connect</span></a> with us
-        </div>
-        <div class="text-center text-lg font-bold mb-16">
-            <a href="">Previous issues</a>
+        <div id="footer container mx-auto p-8">
+            <div class="text-center text-lg font-bold mb-8">
+                <a href=""><span class="text-[#fefece] underline">Connect</span></a> with us
+            </div>
+            <div class="text-center text-lg font-bold pb-16">
+                <a href="">Previous issues</a>
+            </div>
         </div>
     </div>
 
